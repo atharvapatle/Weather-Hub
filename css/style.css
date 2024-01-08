@@ -1,0 +1,163 @@
+:root {
+  --WT-BG-MAIN: #f8f9fa;
+  --WT-BG-SECONDARY: #fff;
+}
+
+#wt-start {
+  box-shadow: -1rem 0 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background-color: white;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#basic-addon1 {
+  background-color: transparent;
+  border-radius: 1rem 0 0 1rem;
+  cursor: pointer;
+}
+
+#search-box {
+  background-color: transparent;
+  border-radius: 0 1rem 1rem 0;
+}
+
+#search-icon-btn {
+  border-radius: 50%;
+  border: 1px solid #ced4da;
+}
+
+#temperature {
+  font-size: 5rem;
+}
+#temp-unit {
+  font-size: 2.5rem;
+  /* padding-top: 1rem; */
+}
+#feels-like {
+  font-size: 1.1rem;
+}
+#feels-like-temp-box {
+  font-size: 1.5rem;
+}
+#day,
+#time {
+  font-size: 1.1rem;
+}
+#time,
+#feels-like-temp-box {
+  color: rgb(160, 160, 160);
+}
+
+#weather-img-sm {
+  height: 2.5rem;
+  width: auto;
+}
+#weather-name {
+  font-size: 1.4rem;
+}
+#weather-desc,
+.state-names {
+  font-size: 1.1rem;
+  color: rgb(160, 160, 160);
+  margin-left: 2.5rem;
+}
+.place-names {
+  font-size: 2rem;
+}
+.temp-unit-selector {
+  font-size: 1.2rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  cursor: pointer;
+}
+.temp-unit-active {
+  background-color: black;
+  color: #fff;
+}
+
+.highlight-card {
+  aspect-ratio: 1.4;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.03);
+}
+.highlight-card h5 {
+  font-size: 1rem;
+  color: rgb(160, 160, 160);
+  font-weight: 400;
+}
+.highlight-card .highlight-value {
+  font-size: 3rem;
+}
+.highlight-card .highlight-unit {
+  font-size: 1.3rem;
+}
+
+.sun-img {
+  height: 3rem;
+  width: auto;
+}
+.sun-values {
+  font-size: 1.2rem;
+}
+
+.week-day-card {
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.03);
+}
+
+@media screen and (max-width: 991px){
+  #temperature {
+    font-size: 3.8rem;
+  }
+} 
+
+
+@media screen and (max-width: 767px) {
+  #wt-start {
+    border-radius: 0 0 1rem 1rem;
+  }
+  #temperature {
+    font-size: 4rem;
+  }
+  .highlight-card h5 {
+    font-size: 0.8rem;
+  }
+  .highlight-card .highlight-value {
+    font-size: 2.5rem;
+  }
+  .highlight-card .highlight-unit {
+    font-size: 1rem;
+  }
+  .sun-img {
+    height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #temperature {
+    font-size: 4.25rem;
+  }
+  .week-day-card {
+    font-size: 0.7rem;
+    border-radius: 0.6rem;
+  }
+  /* .highlight-card .highlight-value {
+    font-size: 2.25rem;
+  }
+  .highlight-card .highlight-unit {
+    font-size: 0.8rem;
+  } */
+  .sun-values{
+    font-size: 1.05rem;
+  }
+}
